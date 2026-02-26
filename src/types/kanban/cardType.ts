@@ -1,0 +1,5 @@
+export interface KanbanCard {
+  id: string;
+  title: string;
+  description?: string;
+}
