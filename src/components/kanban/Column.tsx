@@ -77,7 +77,6 @@ const Column = ({
             <Card
               key={card.id}
               card={card}
-              columnTitle={column.title}
               onDelete={onDeleteCard}
               onEdit={onEditCard}
             />
