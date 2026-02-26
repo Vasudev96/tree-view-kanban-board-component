@@ -6,12 +6,11 @@ import { useEffect, useState } from "react";
 
 interface CardProps {
   card: KanbanCard;
-  columnTitle: string;
   onDelete: (cardId: string) => void;
   onEdit: (cardId: string, title: string) => void;
 }
 
-const Card = ({ card, columnTitle, onDelete, onEdit }: CardProps) => {
+const Card = ({ card, onDelete, onEdit }: CardProps) => {
   const [isEditing, setIsEditing] = useState(false);
   const [editValue, setEditValue] = useState(card.title);
 
